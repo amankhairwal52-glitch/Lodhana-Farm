@@ -4,59 +4,314 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lodhana Farm</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
 <header>
-<h1>🌾 Lodhana Farm</h1>
-<p>Fresh From Farm, Made For Your Family</p>
-</header>
 
-<section>
+<div class="logo">
+🌾 Lodhana Farm
+</div>
 
-<h2>Today's Fresh Vegetables</h2>
+<div class="search-box">
 
 <input
 type="text"
 id="search"
-placeholder="🔍 Search vegetables..."
+placeholder="Search Vegetables...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<div class="cart-icon">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<h1>
+
+Fresh From Farm
+To Your Family
+
+</h1>
+
+<p>
+
+Fresh Vegetables
+Delivered At Your Doorstep
+
+</p>
+
+<button>
+
+Shop Now
+
+</button>
+
+</section>
+
+
+<section class="categories">
+
+<h2>
+
+Categories
+
+</h2>
+
+<div class="category-grid">
+
+<div class="category-card">
+
+🥬
+
+<p>Vegetables</p>
+
+</div>
+
+<div class="category-card">
+
+🍎
+
+<p>Fruits</p>
+
+</div>
+
+<div class="category-card">
+
+🥛
+
+<p>Dairy</p>
+
+</div>
+
+<div class="category-card">
+
+🌾
+
+<p>Grains</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="products">
+
+<h2>
+
+Today's Fresh Vegetables
+
+</h2>
+
+<div
+
+id="products"
+
+class="product-grid"
+
 >
 
-<div id="products" class="grid"></div>
+</div>
 
 </section>
 
-<section>
 
-<h2>🛒 Your Cart</h2>
 
-<div id="cart"></div>
+<section class="cart-section">
 
-<h3>Total: ₹<span id="total">0</span></h3>
+<h2>
 
-<a
-class="wa"
-href="https://wa.me/911234567890"
-target="_blank">
-Order on WhatsApp
-</a>
+🛒 Shopping Cart
+
+</h2>
+
+<div
+
+id="cart-items"
+
+>
+
+Cart Empty
+
+</div>
+
+<div class="bill">
+
+<h3>
+
+Subtotal :
+
+₹<span id="subtotal">
+
+0
+
+</span>
+
+</h3>
+
+<h3>
+
+Delivery :
+
+₹<span id="delivery">
+
+40
+
+</span>
+
+</h3>
+
+<h2>
+
+Grand Total :
+
+₹<span id="grandtotal">
+
+0
+
+</span>
+
+</h2>
+
+</div>
 
 </section>
 
-<section>
 
-<h2>Our Promise</h2>
+<section class="checkout">
 
-<ul>
-<li>✅ Handpicked Fresh Daily</li>
-<li>✅ No Rotten Vegetables</li>
-<li>✅ Refund or Replacement Guarantee</li>
-<li>✅ Home Delivery</li>
-</ul>
+<h2>
+
+Checkout
+
+</h2>
+
+<input
+
+type="text"
+
+id="customer"
+
+placeholder="Customer Name"
+
+>
+
+<input
+
+type="tel"
+
+id="phone"
+
+placeholder="Mobile Number"
+
+>
+
+<textarea
+
+id="address"
+
+placeholder="Delivery Address"
+
+>
+
+</textarea>
+
+<button
+
+id="orderBtn"
+
+>
+
+Place Order On WhatsApp
+
+</button>
 
 </section>
+
+
+
+<section class="promise">
+
+<h2>
+
+Why Choose Lodhana Farm?
+
+</h2>
+
+<div class="promise-box">
+
+✅ Fresh Every Morning
+
+</div>
+
+<div class="promise-box">
+
+🚚 Same Day Delivery
+
+</div>
+
+<div class="promise-box">
+
+💯 Refund On Rotten Vegetables
+
+</div>
+
+<div class="promise-box">
+
+🥬 Farm Fresh Quality
+
+</div>
+
+</section>
+
+
+<footer>
+
+<h3>
+
+Lodhana Farm
+
+</h3>
+
+<p>
+
+📞 8950909315
+
+</p>
+
+<p>
+
+Fresh From Farm,
+Made For Your Family
+
+</p>
+
+</footer>
+
 
 <script src="script.js"></script>
 
